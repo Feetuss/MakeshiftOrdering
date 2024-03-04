@@ -1,16 +1,15 @@
 const express = require('express');
-const controller = ('/backend/controller/product');
+const controller = require('../controller/product');
 const router = express.Router();
 
 
-
 //get list of all orders
-//router.app.get('/',controller.handleList);
+router.get('/',controller.handleList);
 //get order by id
-router.app.get('/:orderId',controller.handl);
+router.get('/:orderId',controller.handleGetById);
 //create a new order
-router.app.post('/',controller.handleCreate);
+router.post('/',controller.handleCreate);
 //delete an order by id
-router.app.delete('/',controller.handleDelete);
+router.delete('/',controller.handleDelete);
 
 module.exports = router;

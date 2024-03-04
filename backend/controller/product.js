@@ -1,9 +1,6 @@
 //here we handle CRUD api requests
-const product = ('/backend/route/productsRoute.js');
 const handleList = async(req, res) =>{
-    console.log("sent a get request to order controller")
-
-
+    console.log("sent a get request to Product controller")
 };
 
 const handleGetById = async (req, res) => {
@@ -21,7 +18,7 @@ console.log("Product Deleted");
 
 };
 
-exports.handleCreate = handleCreate;
-exports.handleList = handleList;
-exports.handleGetById = handleGetById;
-exports.handleDelete = handleDelete;
+module.exports.handleCreate = handleCreate;
+module.exports.handleList = handleList;
+module.exports.handleGetById = handleGetById;
+module.exports.handleDelete = handleDelete;
