@@ -6,7 +6,10 @@ const productRouter = require('./backend/route/productsRoute');
 const ordersRouter = require('./backend/route/ordersRoute');
 const usersRouter = require('./backend/route/usersRoute');
 const connectToDatabase = require('./backend/service/database/database');
+const cors = require('cors');
 
+
+app.use(cors());
 app.use(bodyParser.json()); 
 
 

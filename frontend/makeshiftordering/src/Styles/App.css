@@ -1,0 +1,120 @@
+body{
+    overflow: hidden;
+    background: linear-gradient(to top, #262ae6, #8082e0);
+    min-height: 100vh;
+    z-index: -2;
+}
+.textfields-signin{
+    margin: 10px;
+    width: 50rem;
+    height: 2rem;
+    padding: 10px;
+    border-radius: 3rem;
+    position:relative;
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    box-shadow: -10px  10px  10px  0 rgba(0, 0, 0, 0.2); 
+    border: 3px solid black; 
+}
+
+.textfields-signin::placeholder{
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    color: #c2c2c2;
+}
+
+.textfields-container{
+    left:0;
+    margin-top: 25rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50rem;
+    align-items: center;
+    /*background-color: aqua;*/
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.label-signin{
+    text-align: left;
+    font-size: 2rem;
+    margin: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.signin-button{
+    margin: 10px;
+    width: 9rem;
+    height: 3rem;
+    padding: 10px;
+    border-radius: 3rem;
+    background-color: #87B7FF;
+    position:relative;
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    border: 3px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: -10px  10px  10px  0 rgba(0, 0, 0, 0.2); 
+
+}
+
+.signin-button:hover{
+    background-color: #6ca7ff;
+    cursor: pointer;
+}
+
+.signin-button:active{
+    background-color: #418dff;
+}
+
+.circle1 {
+    width: 55rem;
+    height: 55rem;
+    border-radius: 50%;
+    background-color: #8E8FFA;
+    background: radial-gradient(at top left, #ffffff, #8b8df542);
+
+    position: absolute;
+    left: -20rem;
+    top:-31.5rem;
+    z-index: 0;
+    box-shadow: 20px  20px  20px  0 rgba(0, 0, 0, 0.2); 
+}
+
+.circle2 {
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    background-color: #7D7AFF;
+    background: radial-gradient(at bottom left, #ffffff, #7D7AFF);
+    position: absolute;
+    left: -14rem;
+    bottom:-30rem;
+    z-index: 0;
+    box-shadow: 20px  -20px  20px  0 rgba(0, 0, 0, 0.2); 
+}
+
+.circle3 {
+    width: 100rem;
+    height: 100rem;
+    border-radius: 50%;
+    background-color: #4A34B4;
+    background: radial-gradient(at bottom right, #aca3d6, #4A34B4);
+    position: absolute;
+    right: -30rem;
+    top:-50rem;
+    z-index: 0;
+    box-shadow: -20px  20px  20px  0 rgba(0, 0, 0, 0.2); 
+}
