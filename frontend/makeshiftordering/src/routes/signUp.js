@@ -1,4 +1,6 @@
-import react from 'react';
+import React from 'react';
+import Header from '../components/Header';
+
 
 const SignUp = () => {
   return (
@@ -19,9 +21,10 @@ const SignUp = () => {
           </div>
           <button className='signin-button'>
             Sign Up
-          </button> 
-          <Link  to={'/pages/signUp.js'}>NavigateNow</Link>     
+          </button>     
         </div>
     </div>
   );
 }
+
+export default SignUp;
