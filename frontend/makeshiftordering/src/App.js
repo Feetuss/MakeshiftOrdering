@@ -1,12 +1,9 @@
 import React from 'react';
 import Header from './Header';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './Styles/App.css';
-import { Link } from 'react-router-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import signUp from '../src/pages/signUp';
 function App() {
   return (
-    <Router>
     <div>
       <Header/>
         <div className='circle1'></div>
@@ -24,11 +21,10 @@ function App() {
           </div>
           <button className='signin-button'>
             Sign In
-          </button>
-          <Link to="/signUp">Go to Page 2</Link>          
+          </button> 
+          <Link  to={'/pages/signUp.js'}>NavigateNow</Link>     
         </div>
     </div>
-    </Router>
   );
 }
 
